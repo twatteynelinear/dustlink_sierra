@@ -619,8 +619,8 @@ VizAcceleration.prototype.update = function(data) {
    image = z>0?'grape_front.png':'grape_back.png';
    
    $('#image_'+this.vizId).attr('src',image);
-   $('#image_'+this.vizId).css('left',  ($('#viz_'+this.vizId).width() -120)/2);
-   $('#image_'+this.vizId).css('bottom',($('#viz_'+this.vizId).height()-120)/2);
+   $('#image_'+this.vizId).css('left',  ($('#viz_'+this.vizId).width() -128)/2);
+   $('#image_'+this.vizId).css('bottom',($('#viz_'+this.vizId).height()-128)/2);
 }
 
 //===== VizLed
