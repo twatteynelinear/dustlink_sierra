@@ -616,15 +616,7 @@ VizAcceleration.prototype.update = function(data) {
       console.log('ERROR: could not parse VizAcceleration update '+this.lastvalue);
    }
    
-   maxVal = Math.max(Math.abs(x),Math.abs(y),Math.abs(z));
-   
-   if        (maxVal==Math.abs(x)) {
-      image = x>0?'dice_1.png':'dice_6.png';
-   } else if (maxVal==Math.abs(y)) {
-      image = y>0?'dice_2.png':'dice_5.png';
-   } else {
-      image = z>0?'dice_4.png':'dice_3.png';
-   }
+   image = z>0?'grape_front.png':'grape_back.png';
    
    $('#image_'+this.vizId).attr('src',image);
    $('#image_'+this.vizId).css('left',  ($('#viz_'+this.vizId).width() -120)/2);
